@@ -1,0 +1,17 @@
+spring.application.name=eureka-service
+
+server.port=8302
+  
+eureka.client.register-with-eureka=false
+eureka.client.fetch-registry=false
+eureka.server.wait-time-in-ms-when-sync-empty=0
+eureka.client.use-dns-for-fetching-service-urls=http://localhost:8302/eureka
+ 
+eureka:
+ client:
+  registerWithEureka: false
+  fetchRegistry: false
+ server:
+  waitTimeInMsWhenSyncEmpty: 0
+ serviceUrl:
+  defaultZone: http://localhost:8302/eureka

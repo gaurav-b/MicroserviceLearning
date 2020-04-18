@@ -1,0 +1,18 @@
+spring.application.name=initiator-service
+
+server.port=8001
+  
+eureka.client.register-with-eureka=true
+eureka.client.fetch-registry=true
+
+# as per spring cloud pdf following should be written,
+#eureka.serviceUrl.defaultZone=http://localhost:8000/eureka
+
+# in yml file I have written following structure,
+eureka.client.service-url.defaultZone=http://localhost:8000/eureka
+
+# one github project is suggesting following,
+#eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka/
+
+eureka.instance.hostname=localhost
+
